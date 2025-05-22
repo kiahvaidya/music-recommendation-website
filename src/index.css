@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Music App Theme - Light Mode */
+    --background: 260 20% 98%;
+    --foreground: 250 20% 5%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 250 20% 5%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 250 20% 5%;
+
+    --primary: 267 83% 60%; /* Purple */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 264 40% 96%;
+    --secondary-foreground: 250 20% 5%;
+
+    --muted: 250 10% 94%;
+    --muted-foreground: 250 10% 40%;
+
+    --accent: 250 30% 92%;
+    --accent-foreground: 250 20% 5%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 260 40% 92%;
+    --input: 260 40% 92%;
+    --ring: 267 83% 60%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5% 26%;
+    --sidebar-primary: 240 6% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 5% 96%;
+    --sidebar-accent-foreground: 240 6% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217 91% 60%;
+  }
+
+  .dark {
+    /* Music App Theme - Dark Mode */
+    --background: 250 20% 6%;
+    --foreground: 260 20% 98%;
+
+    --card: 250 20% 8%;
+    --card-foreground: 260 20% 98%;
+
+    --popover: 250 20% 8%;
+    --popover-foreground: 260 20% 98%;
+
+    --primary: 267 83% 60%; /* Purple */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 264 15% 15%;
+    --secondary-foreground: 260 20% 98%;
+
+    --muted: 250 15% 15%;
+    --muted-foreground: 250 10% 70%;
+
+    --accent: 250 15% 15%;
+    --accent-foreground: 260 20% 98%;
+
+    --destructive: 0 70% 45%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 260 15% 15%;
+    --input: 260 15% 15%;
+    --ring: 267 83% 60%;
+
+    --sidebar-background: 240 6% 10%;
+    --sidebar-foreground: 240 5% 96%;
+    --sidebar-primary: 267 83% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 4% 16%;
+    --sidebar-accent-foreground: 240 5% 96%;
+    --sidebar-border: 240 4% 16%;
+    --sidebar-ring: 217 91% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
